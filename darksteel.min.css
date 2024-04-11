@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+:root {
+  --theme-black: rgb(19, 19, 19);
+  --theme-white: rgb(245, 245, 245);
+
+  --disabled-color: rgba(136, 136, 136, 0.445);
+  --disabled-font-color: rgb(136, 136, 136);
+
+  --danger-color: rgb(255, 63, 63);
+  --danger-font-color: var(--theme-white);
+  --danger-hoverr-color: rgb(209, 0, 0);
+
+  --succes-color: rgb(129, 245, 62);
+  --succes-font-color: var(--theme-white);
+  --succes-hoverr-color: rgb(74, 202, 0);
+
+  --primary-color: rgb(62, 135, 245);
+  --primary-font-color: var(--theme-white);
+  --primary-hoverr-color: rgb(0, 87, 218);
+
+  --warning-color: rgb(245, 218, 62);
+  --warning-font-color: var(--theme-black);
+  --warning-hoverr-color: rgb(231, 197, 0);
+
+  --dark-color: rgb(53, 53, 53);
+  --dark-font-color: var(--theme-white);
+  --dark-hoverr-color: var(--theme-black);
+}
+.btn {
+  background-color: rgb(235, 235, 235);
+  padding: 10px;
+  font-family: "Open Sans", sans-serif;
+}
+.borderless {
+  border: none;
+}
+.rounded {
+  border-radius: 30px;
+}
+.half-rounded {
+  border-radius: 15px;
+}
+div {
+  margin: 10px;
+}
+body {
+  margin: 0;
+}
+
+/* FS Size */
+
+.font-s-medium {
+  font-size: medium;
+}
+.font-s-large {
+  font-size: large;
+}
+.font-s-larger {
+  font-size: larger;
+}
+.font-s-xlarge {
+  font-size: x-large;
+}
+.font-s-xxlarge {
+  font-size: xx-large;
+}
+
+/* BTN Styles */
+
+.btn-disabled {
+  background-color: var(--disabled-color);
+  padding: 10px;
+  color: var(--disabled-font-color);
+}
+.btn-danger {
+  background-color: var(--danger-color);
+  padding: 10px;
+  color: var(--danger-font-color);
+  transition: background-color 0.3s;
+}
+.btn-danger:hover {
+  background-color: var(--danger-hoverr-color);
+  padding: 10px;
+  color: var(--danger-font-color);
+  cursor: pointer;
+}
+.btn-succes {
+  background-color: var(--succes-color);
+  padding: 10px;
+  color: var(--succes-font-color);
+  transition: background-color 0.3s;
+}
+.btn-succes:hover {
+  background-color: var(--succes-hoverr-color);
+  padding: 10px;
+  color: var(--succes-font-color);
+  cursor: pointer;
+}
+.btn-primary {
+  background-color: var(--primary-color);
+  padding: 10px;
+  color: var(--primary-font-color);
+  transition: background-color 0.3s;
+}
+.btn-primary:hover {
+  background-color: var(--primary-hoverr-color);
+  padding: 10px;
+  color: var(--primary-font-color);
+  cursor: pointer;
+}
+.btn-warning {
+  background-color: var(--warning-color);
+  padding: 10px;
+  color: var(--warning-font-color);
+  transition: background-color 0.3s;
+}
+.btn-warning:hover {
+  background-color: var(--warning-hoverr-color);
+  padding: 10px;
+  color: var(--warning-font-color);
+  cursor: pointer;
+}
+.btn-dark {
+  background-color: var(--dark-color);
+  padding: 10px;
+  color: var(--dark-font-color);
+  transition: background-color 0.3s;
+}
+.btn-dark:hover {
+  background-color: var(--dark-hoverr-color);
+  padding: 10px;
+  color: var(--dark-font-color);
+  cursor: pointer;
+}
