@@ -1,0 +1,17 @@
+/*---------------------------------------------------------------- NavbarTP ---------------------------------------------------------------- */
+
+.navbar{
+    background-color: var(--nav-bg-opacity);
+    padding: 10px;
+    font-family: var(--theme-font-family);
+    margin: 0;
+    width: 100%;
+  }
+  .navbar-fixed {
+    position: fixed !important;
+    background-color: var(--nav-bg-opacity);
+    padding: 10px;
+    font-family: var(--theme-font-family);
+    margin: 0;
+    width: 100%;
+  }
