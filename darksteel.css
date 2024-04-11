@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
-
+@import url("https://cdn.jsdelivr.net/gh/sXrja/DarkSteelFramework@main/navbar.tp.css");
 :root {
 
   --nav-bg-opacity: rgba(0, 0, 0, 0.103);
@@ -140,39 +140,4 @@ body {
   color: var(--dark-font-color);
   cursor: pointer;
 }
-
-/*---------------------------------------------------------------- List Styles ---------------------------------------------------------------- */
-
-ul {
-  font-family: var(--theme-font-family);
-  list-style-type: none;
-}
-ul li {
-  text-decoration: none;
-  margin: 5px;
-}
-.list-inline {
-  display: inline;
-}
-li a {
-  text-decoration: none;
-  color: var(--theme-black);
-  padding: 5px;
-  transition: all 0.3s ease;
-}
-.underlined:hover {
-  text-decoration: underline;
-}
-.bordered:hover {
-  border: 1px solid var(--theme-black);
-}
-.bordered-half-rounded:hover {
-  border: 1px solid var(--theme-black);
-  border-radius: 5px;
-}
-.bordered-rounded:hover {
-  border: 1px solid var(--theme-black);
-  border-radius: 14px;
-}
-
 /*---------------------------------------------------------------- GridSystem ---------------------------------------------------------------- */
