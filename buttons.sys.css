@@ -1,0 +1,84 @@
+  /*---------------------------------------------------------------- Button Styles ---------------------------------------------------------------- */
+
+.btn {
+    background-color: rgb(235, 235, 235);
+    padding: 10px;
+    font-family: var(--theme-font-family);
+  }
+  .borderless {
+    border: none;
+  }
+  .rounded {
+    border-radius: 30px;
+  }
+  .half-rounded {
+    border-radius: 15px;
+  }
+
+  /* BTN Styles */
+
+.btn-disabled {
+    background-color: var(--disabled-color);
+    padding: 10px;
+    color: var(--disabled-font-color);
+  }
+  .btn-danger {
+    background-color: var(--danger-color);
+    padding: 10px;
+    color: var(--danger-font-color);
+    transition: background-color 0.3s;
+  }
+  .btn-danger:hover {
+    background-color: var(--danger-hoverr-color);
+    padding: 10px;
+    color: var(--danger-font-color);
+    cursor: pointer;
+  }
+  .btn-succes {
+    background-color: var(--succes-color);
+    padding: 10px;
+    color: var(--succes-font-color);
+    transition: background-color 0.3s;
+  }
+  .btn-succes:hover {
+    background-color: var(--succes-hoverr-color);
+    padding: 10px;
+    color: var(--succes-font-color);
+    cursor: pointer;
+  }
+  .btn-primary {
+    background-color: var(--primary-color);
+    padding: 10px;
+    color: var(--primary-font-color);
+    transition: background-color 0.3s;
+  }
+  .btn-primary:hover {
+    background-color: var(--primary-hoverr-color);
+    padding: 10px;
+    color: var(--primary-font-color);
+    cursor: pointer;
+  }
+  .btn-warning {
+    background-color: var(--warning-color);
+    padding: 10px;
+    color: var(--warning-font-color);
+    transition: background-color 0.3s;
+  }
+  .btn-warning:hover {
+    background-color: var(--warning-hoverr-color);
+    padding: 10px;
+    color: var(--warning-font-color);
+    cursor: pointer;
+  }
+  .btn-dark {
+    background-color: var(--dark-color);
+    padding: 10px;
+    color: var(--dark-font-color);
+    transition: background-color 0.3s;
+  }
+  .btn-dark:hover {
+    background-color: var(--dark-hoverr-color);
+    padding: 10px;
+    color: var(--dark-font-color);
+    cursor: pointer;
+  }
