@@ -2,6 +2,9 @@
 @import url("https://cdn.jsdelivr.net/gh/sXrja/DarkSteelFramework@main/navbar.tp.css");
 @import url("https://cdn.jsdelivr.net/gh/sXrja/DarkSteelFramework@main/list.sys.css");
 @import url("https://cdn.jsdelivr.net/gh/sXrja/DarkSteelFramework@main/buttons.sys.css");
+@import url("https://cdn.jsdelivr.net/gh/sXrja/DarkSteelFramework@main/grid.sys.css");
+@import url("input.sys.css");
+@import url("math.ds.css");
 :root {
 
   --nav-bg-opacity: rgba(0, 0, 0, 0.103);
@@ -37,28 +40,49 @@
 
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 div {
   margin: 10px;
 }
 body {
   margin: 0;
+  font-family: var(--theme-font-family);
+}
+default-text{
+  color: black !important;
 }
 
 /* FS Size */
 
 .font-s-medium {
-  font-size: medium;
+  font-size: medium !important;
 }
 .font-s-large {
-  font-size: large;
+  font-size: large !important;
 }
 .font-s-larger {
-  font-size: larger;
+  font-size: larger !important;
 }
 .font-s-xlarge {
-  font-size: x-large;
+  font-size: x-large !important; 
 }
 .font-s-xxlarge {
-  font-size: xx-large;
+  font-size: xx-large !important;
 }
-/*---------------------------------------------------------------- GridSystem ---------------------------------------------------------------- */
+
+/* Others */
+
+.borderless {
+  border: none;
+}
+.rounded {
+  border-radius: 30px;
+}
+.half-rounded {
+  border-radius: 15px;
+}
