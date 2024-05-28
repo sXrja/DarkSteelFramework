@@ -94,6 +94,7 @@
   height: 200px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .card-pic-round {
     width: 100%;
@@ -102,4 +103,5 @@
   border-radius: 50%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
