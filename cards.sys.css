@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400..700&display=swap");
+
+.card {
+  padding: 10px;
+  background-color: rgb(241, 241, 241);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: block;
+  box-shadow: rgba(0, 0, 0, 0.377) 3px 3px 10px;
+}
+
+.card-radius-1 {
+  padding: 10px;
+  background-color: rgb(241, 241, 241);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: block;
+  box-shadow: rgba(0, 0, 0, 0.377) 3px 3px 10px;
+
+}
+
+.card-radius-2 {
+  padding: 10px;
+  background-color: rgb(241, 241, 241);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: block;
+  box-shadow: rgba(0, 0, 0, 0.377) 3px 3px 10px;
+}
+
+.card-without-shadow {
+    padding: 10px;
+    background-color: rgb(241, 241, 241);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: block;
+  }
+  
+  .card-radius-1-without-shadow {
+    padding: 10px;
+    background-color: rgb(241, 241, 241);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: block;
+  }
+  
+  .card-radius-2-without-shadow {
+    padding: 10px;
+    background-color: rgb(241, 241, 241);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: block;
+  }
+
+.card-title {
+  font-family: Edu TAS Beginner;
+  font-weight: 900;
+  font-weight: 600;
+  color: var(--theme-black);
+}
+
+.card-title-centered {
+  font-family: Edu TAS Beginner;
+  font-weight: 900;
+  font-weight: 600;
+  color: var(--theme-black);
+  display: flex;
+  justify-content: center;
+}
+
+.card-description {
+  margin-top: 5px;
+}
+
+.card-description-centered {
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.card-pic {
+    width: 100%;
+  max-width: 200px;
+  height: 200px;
+}
+.card-pic-round {
+    width: 100%;
+  max-width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
