@@ -1,0 +1,19 @@
+:root{
+    --proper-size-1: 1fr;
+    --proper-size-2: 2fr;
+    --proper-size-3: 3fr;
+    --proper-size-4: 4fr;
+    --proper-size-5: 5fr;
+    --proper-size-6: 6fr;
+    --proper-size-7: 7fr;
+    --proper-size-8: 8fr;
+    --proper-size-9: 9fr;
+    --proper-size-0: 0;
+
+    --grid-field-inpixels: 100px;
+
+    --pos-mid: center;
+    --pos-right: right;
+    --pos-left: left;
+
+}
