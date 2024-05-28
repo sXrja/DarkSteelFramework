@@ -92,10 +92,14 @@
     width: 100%;
   max-width: 200px;
   height: 200px;
+  display: flex;
+  justify-content: center;
 }
 .card-pic-round {
     width: 100%;
   max-width: 200px;
   height: 200px;
   border-radius: 50%;
+  display: flex;
+  justify-content: center;
 }
