@@ -5,6 +5,7 @@
 @import url("https://cdn.jsdelivr.net/gh/sXrja/DarkSteelFramework@main/grid.sys.css");
 @import url("input.sys.css");
 @import url("math.ds.css");
+@import url("https://cdn.jsdelivr.net/gh/sXrja/DarkSteelFramework@main/cards.sys.css");
 :root {
 
   --nav-bg-opacity: rgba(0, 0, 0, 0.103);
