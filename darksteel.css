@@ -6,6 +6,7 @@
 @import url("input.sys.css");
 @import url("https://cdn.jsdelivr.net/gh/sXrja/DarkSteelFramework@main/math.ds.css");
 @import url("https://cdn.jsdelivr.net/gh/sXrja/DarkSteelFramework@main/cards.sys.css");
+@import url("https://cdn.jsdelivr.net/gh/sXrja/DarkSteelFramework@main/section.sys.css");
 :root {
 
   --nav-bg-opacity: rgba(0, 0, 0, 0.103);
