@@ -1,0 +1,14 @@
+section{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 1px;
+    box-shadow: rgba(0, 0, 0, 0.288) 0px 3px 5px;
+}
+.section-without-shadow{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 1px;
+    box-shadow:none !important;
+}
