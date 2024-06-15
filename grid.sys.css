@@ -6,7 +6,6 @@
     margin-right: auto;
     margin-left: auto;
 }
-
 /* Definiert das Verhalten der Zeile */
 .row {
     display: flex;
@@ -14,14 +13,12 @@
     margin-right: -15px;
     margin-left: -15px;
 }
-
 /* Definiert das Verhalten der Spalten */
 .col {
     flex: 1;
     padding-right: 15px;
     padding-left: 15px;
 }
-
 /* Flexibles Layout für Spalten */
 .col-1 { flex: 0 0 8.33%; max-width: 8.33%; }
 .col-2 { flex: 0 0 16.66%; max-width: 16.66%; }
@@ -35,7 +32,6 @@
 .col-10 { flex: 0 0 83.33%; max-width: 83.33%; }
 .col-11 { flex: 0 0 91.66%; max-width: 91.66%; }
 .col-12 { flex: 0 0 100%; max-width: 100%; }
-
 /* Extra kleine Geräte (Handys, 600px und kleiner) */
 @media (max-width: 600px) {
     .col {
@@ -43,7 +39,6 @@
         max-width: 100%;
     }
 }
-
 /* Kleine Geräte (Tablets, 600px und größer) */
 @media (min-width: 600px) {
     .col-sm-1 { flex: 0 0 8.33%; max-width: 8.33%; }
@@ -59,7 +54,6 @@
     .col-sm-11 { flex: 0 0 91.66%; max-width: 91.66%; }
     .col-sm-12 { flex: 0 0 100%; max-width: 100%; }
 }
-
 /* Mittlere Geräte (Desktops, 768px und größer) */
 @media (min-width: 768px) {
     .col-md-1 { flex: 0 0 8.33%; max-width: 8.33%; }
@@ -75,7 +69,6 @@
     .col-md-11 { flex: 0 0 91.66%; max-width: 91.66%; }
     .col-md-12 { flex: 0 0 100%; max-width: 100%; }
 }
-
 /* Große Geräte (große Desktops, 992px und größer) */
 @media (min-width: 992px) {
     .col-lg-1 { flex: 0 0 8.33%; max-width: 8.33%; }

@@ -6,6 +6,7 @@
     font-family: var(--theme-font-family);
     margin: 0;
     width: 100%;
+    z-index: 999;
   }
   .navbar-fixed {
     position: fixed !important;
@@ -14,4 +15,8 @@
     font-family: var(--theme-font-family);
     margin: 0;
     width: 100%;
+    z-index: 999;
+  }
+  .first-mainconent{
+    margin-top: 3%;
   }

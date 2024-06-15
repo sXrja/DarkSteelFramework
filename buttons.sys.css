@@ -5,15 +5,7 @@
     padding: 10px;
     font-family: var(--theme-font-family);
   }
-  .borderless {
-    border: none;
-  }
-  .rounded {
-    border-radius: 30px;
-  }
-  .half-rounded {
-    border-radius: 15px;
-  }
+  
 
   /* BTN Styles */
 
