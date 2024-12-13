@@ -1,0 +1,208 @@
+body {
+    margin: 0;
+}
+
+/* Standard Button-Styling */
+.btn {
+    background-color: var(--button-color, pink); /* Default-Farbe */
+    font-size: var(--button-size, 30px); /* Default-Größe */
+    border-radius: var(--button-radius, 20px); /* Default-Radius */
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* sanfter Übergang */
+}
+
+/* Hover-Effekt über CSS-Variable */
+.btn:hover {
+    background-color: var(--hover-color, red); /* Default Hover-Farbe */
+}
+
+/* Input Styles */
+
+/* Standard-Styles für Input und Textarea */
+.input, .textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: var(--input-radius, 5px); /* Standard-Radius */
+    background-color: var(--input-color, white); /* Standard-Farbe */
+    font-size: var(--input-size, 16px); /* Standard-Schriftgröße */
+    width: 100%;
+    box-sizing: border-box;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Focus-Effekt */
+.input:focus, .textarea:focus {
+    outline: none;
+    background-color: var(--focus-color, lightyellow);
+    border-color: var(--focus-border-color, lightgreen);
+}
+
+/* Hover-Effekt */
+.input:hover, .textarea:hover {
+    background-color: var(--hover-color, lightgray);
+}
+
+/* Unterschiedliche Klassen für unterschiedliche Elemente */
+.input {
+    /* spezifisches Styling für input */
+}
+
+.textarea {
+    /* spezifisches Styling für textarea */
+}
+
+
+/* Allgemeine Styles für die Navbar */
+.navbar {
+    background-color: var(--navbar-color, #333); /* Standardfarbe der Navbar */
+    color: var(--navbar-text-color, white); /* Textfarbe der Navbar */
+    display: flex;
+    justify-content: space-between; /* Verteilt die Links und das Logo */
+    align-items: center;
+    padding: 15px 30px;
+    font-size: var(--navbar-font-size, 16px);
+    transition: background-color 0.3s;
+    position: relative;
+}
+
+/* Logo */
+.navbar .logo {
+    font-size: var(--logo-font-size, 24px); /* Größe des Logos */
+    font-weight: bold;
+    color: var(--logo-color, white); /* Farbe des Logos */
+    order: 0; /* Standardmäßig setzen wir das Logo nach den Links */
+}
+
+/* Links in der Navbar */
+.navbar a {
+    color: var(--navbar-link-color, white);
+    text-decoration: none;
+    margin: 0 10px; /* Abstand zwischen den Links */
+    transition: color 0.3s;
+}
+
+/* Hover-Effekt für die Links */
+.navbar a:hover {
+    color: var(--navbar-link-hover-color, #f4a261); /* Hover-Farbe der Links */
+}
+
+/* Sticky Navbar */
+.navbar.sticky {
+    position: -webkit-sticky; /* Für Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Sicherstellen, dass die Navbar immer oben bleibt */
+    box-shadow: 0 4px 2px -2px gray; /* Leichter Schatten beim Sticky-Effekt */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Navbar wird untereinander angeordnet */
+        align-items: flex-start;
+    }
+
+    .navbar a {
+        margin: 5px 0;
+    }
+}
+.div-container {
+    display: inline-block;
+    padding: 20px;
+    margin: 10px;
+    position: relative;
+    transition: all 0.3s ease;
+
+    /* Setze die Standardwerte der CSS-Variablen */
+    --div-color: #fff;
+    --div-size: 100px;
+    --div-radius: 20px;
+    --div-border: none;
+    --div-shadow: none;
+
+    /* Hintergrundfarbe */
+    background-color: var(--div-color);
+    /* Größe */
+    width: var(--div-size);
+    height: var(--div-size);
+    /* Border-Radius */
+    border-radius: var(--div-radius);
+    /* Border */
+    border: 2px solid var(--div-border);
+    /* Schatten */
+    box-shadow: var(--div-shadow);
+}
+
+/* Hover-Effekte */
+.div-container:hover {
+    background-color: var(--hover-color);
+}
+
+
+/* Flexbox */
+.display\.flex {
+    display: flex;
+  }
+  
+  .content\.center {
+    justify-content: center;
+    align-items: center;
+  }.content\.right {
+    justify-content: right;
+    align-items: center;
+  }.content\.left {
+    justify-content: left;
+    align-items: center;
+  }
+  
+  .align\.start {
+    justify-content: flex-start;
+  }
+  
+  .align\.end {
+    justify-content: flex-end;
+  }
+  
+  .direction\.row {
+    flex-direction: row;
+  }
+  
+  .direction\.column {
+    flex-direction: column;
+  }
+
+  /* Standard Card Styles */
+/* Standard Card Styles */
+.card {
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .card-description {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .card-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
