@@ -287,8 +287,6 @@ class SteelTypewriter extends HTMLElement {
 customElements.define("steel-typewriter", SteelTypewriter);
 
 
-//ProgressBar
-
 // Funktion zum Erstellen eines Fortschrittsbalkens
 function createProgressBar(container, options = {}) {
   // Standardoptionen
@@ -354,10 +352,28 @@ function initProgressBars() {
     progressElement.style.width = `${progress}%`;
     progressElement.style.backgroundColor = color;
 
-    // Füge den Fortschrittsbalken in den Container ein
+    // Text im Fortschrittsbalken hinzufügen
+    const textElement = document.createElement('span');
+    textElement.classList.add('progress-bar-text');
+    textElement.textContent = `${progress}%`;
+
+    // Füge den Fortschrittsbalken und den Text zum Container hinzu
     progressBar.appendChild(progressElement);
+    progressBar.appendChild(textElement);
   });
 }
 
 // Starte die Initialisierung, sobald das DOM geladen ist
 document.addEventListener('DOMContentLoaded', initProgressBars);
+
+// Funktion zum Aktualisieren des Fortschritts
+function updateProgress(progressBar, progress) {
+  const progressElement = progressBar.querySelector('.progress-bar');
+  const textElement = progressBar.querySelector('.progress-bar-text');
+  
+  // Setze den neuen Fortschritt
+  progressElement.style.width = progress + '%';
+  
+  // Text im Fortschrittsbalken aktualisieren
+  textElement.textContent = progress + '%';
+}

@@ -235,18 +235,32 @@ steel-typewriter {
 
 /* Container für den Fortschrittsbalken */
 .progress {
-  width: 100%;
-  height: 30px;
+  position: relative;
   background-color: #e0e0e0;
   border-radius: 10px;
   overflow: hidden;
-  position: relative;
+  width: 100%; /* Kann angepasst werden */
+  height: 30px; /* Höhe des Fortschrittsbalkens */
 }
 
-/* Fortschrittsbalken, der die Breite anpasst */
-.progress .progress-bar {
+/* Der eigentliche Fortschrittsbalken */
+.progress-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
   height: 100%;
-  background-color: blue; /* Standardfarbe */
-  transition: width 0.5s ease;
+  background-color: blue;
+  transition: width 0.5s ease; /* Animiert die Breitenänderung */
   border-radius: 10px;
+}
+
+/* Text im Fortschrittsbalken */
+.progress-bar-text {
+  position: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
 }
