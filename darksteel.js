@@ -377,3 +377,45 @@ function updateProgress(progressBar, progress) {
   // Text im Fortschrittsbalken aktualisieren
   textElement.textContent = progress + '%';
 }
+// Schließen von Alerts
+document.addEventListener('DOMContentLoaded', function () {
+  const closeButtons = document.querySelectorAll('.btn-close');
+  
+  closeButtons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      const alert = button.closest('.alert');
+      alert.classList.remove('show');
+      alert.classList.add('fade');
+      
+      // Entfernt den Alert nach der Animation
+      setTimeout(function () {
+        alert.remove();
+      }, 150); // Zeit muss mit der CSS-Transition übereinstimmen
+    });
+  });
+});
+
+// Dynamisches Hinzufügen von Alerts mit JS (optional)
+function addAlert(type, message) {
+  const alertContainer = document.getElementById('alert-container'); // Ein Container, in dem Alerts hinzugefügt werden
+  
+  const alert = document.createElement('div');
+  alert.classList.add('alert', 'fade', 'show', `alert-${type}`);
+  alert.setAttribute('role', 'alert');
+  
+  alert.innerHTML = `
+    ${message}
+    <button type="button" class="btn-close" aria-label="Close"></button>
+  `;
+  
+  alertContainer.appendChild(alert);
+  
+  // Automatisches Entfernen nach 5 Sekunden
+  setTimeout(function () {
+    alert.classList.remove('show');
+    alert.classList.add('fade');
+    setTimeout(function () {
+      alert.remove();
+    }, 150); // Zeit muss mit der CSS-Transition übereinstimmen
+  }, 5000);
+}
