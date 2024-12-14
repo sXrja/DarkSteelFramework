@@ -285,3 +285,79 @@ class SteelTypewriter extends HTMLElement {
 }
 
 customElements.define("steel-typewriter", SteelTypewriter);
+
+
+//ProgressBar
+
+// Funktion zum Erstellen eines Fortschrittsbalkens
+function createProgressBar(container, options = {}) {
+  // Standardoptionen
+  const defaults = {
+    width: '0%', // Startfortschritt
+    color: 'blue', // Startfarbe
+    height: '30px', // Höhe des Balkens
+    backgroundColor: '#e0e0e0', // Hintergrundfarbe des Containers
+    transition: 'width 0.5s ease' // Animation der Breitenänderung
+  };
+
+  // Mische benutzerdefinierte Optionen mit den Standardwerten
+  const settings = { ...defaults, ...options };
+
+  // Erstelle die Container- und Balken-Elemente
+  const progressBarContainer = document.createElement('div');
+  const progressBar = document.createElement('div');
+
+  // Setze die Stile für den Container
+  progressBarContainer.style.width = '100%';
+  progressBarContainer.style.height = settings.height;
+  progressBarContainer.style.backgroundColor = settings.backgroundColor;
+  progressBarContainer.style.borderRadius = '10px';
+  progressBarContainer.style.overflow = 'hidden';
+
+  // Setze die Stile für den Fortschrittsbalken
+  progressBar.style.height = '100%';
+  progressBar.style.width = settings.width;
+  progressBar.style.backgroundColor = settings.color;
+  progressBar.style.transition = settings.transition;
+  progressBar.style.borderRadius = '10px';
+
+  // Füge den Fortschrittsbalken zum Container hinzu
+  progressBarContainer.appendChild(progressBar);
+
+  // Füge den Container zum angegebenen Container (z. B. einem div in der HTML-Seite) hinzu
+  container.appendChild(progressBarContainer);
+
+  // Rückgabewert: Fortschrittsbalken, der von außen bearbeitet werden kann
+  return progressBar;
+}
+
+// Beispiel für das Ändern des Fortschritts und der Farbe
+function setProgress(progressBar, progress, color) {
+  progressBar.style.width = `${progress}%`;
+  progressBar.style.backgroundColor = color;
+}
+
+// Funktion zum Erstellen des Fortschrittsbalkens
+function initProgressBars() {
+  const progressBars = document.querySelectorAll('.progress');
+
+  progressBars.forEach(progressBar => {
+    // Hole die Fortschritts- und Farbwerte aus den Attributen
+    const progress = parseInt(progressBar.getAttribute('data-progress')) || 0;
+    const color = progressBar.getAttribute('data-color') || 'blue';
+
+    // Erstelle die Fortschrittsanzeige
+    const progressElement = document.createElement('div');
+    progressElement.classList.add('progress-bar');
+
+    // Setze die Werte für Breite und Farbe
+    progressElement.style.width = `${progress}%`;
+    progressElement.style.backgroundColor = color;
+
+    // Füge den Fortschrittsbalken in den Container ein
+    progressBar.appendChild(progressElement);
+  });
+}
+
+// Starte die Initialisierung, sobald das DOM geladen ist
+document.addEventListener('DOMContentLoaded', initProgressBars);

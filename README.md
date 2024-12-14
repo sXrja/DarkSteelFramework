@@ -6,3 +6,8 @@ The DarkSteelFramework is a css design framework that is very ez to use!
 Just paste this Filelinks into your head section:
 css: https://cdn.jsdelivr.net/gh/sXrja/DarkSteelFramework@main/darksteel.css
 script: https://cdn.jsdelivr.net/gh/sXrja/DarkSteelFramework@main/darksteel.js
+
+
+## News
+
+- added working Progress Bar
