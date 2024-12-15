@@ -10,4 +10,5 @@ script: https://cdn.jsdelivr.net/gh/sXrja/DarkSteelFramework@main/darksteel.js
 
 ## News
 
+- added Alerts
 - added working Progress Bar
